@@ -1,0 +1,77 @@
+Data Structures--> different ways of organizing data on your computer that can be used effectively
+#correctness
+#efficiency
+
+#data structures is used in middleware in the the full stack application
+
+time complexity------------->
+example: while searching in n size array
+best case: find at first position  -->Big theta
+avg case: somewhere in middle      -->Big Omega
+worst case: not found/ found at last  -->Big O
+
+
+O(1)= Constant time
+array=[1,2,3,4,5]
+array[1]==array[2]
+requires same time to access any element
+Use case--accessing a specific element in an array
+
+
+O(n)= Linear time
+array=[1,2,3,4,5]
+for element in array:
+     print(element)
+Use case--loop through array elements
+
+O(log n)= Logarithmic time
+visit only some elements
+Use case--binary search
+
+O(n^2)= Quadratic time
+for x in array:
+  for y in array:
+     print(x,y)
+Use case--looking at every index in the array twice(nested loop)
+
+O(2^n)= Exponential time
+def finbonacci(n):
+     if n <= 1:
+         return n
+     return fibonacci(n-1) + fibonacci(n-2)
+Use case--double recurssion in fibonacci
+
+
+recursion: when to divide the main problem into same subproblems
+loop: to execute same things multiple times
+
+===============Day 5==================
+stack/queue using list:
+   easy to implement
+   speed problem when it grow
+
+stack/queue using linkedlist:
+    fast performance
+    implemnetation is not easy   
+
+Stack:
+                       time          space
+create stack           O(1)           O(1)
+push                   O(1)/O(n^2)    O(1)
+pop                    O(1)           O(1)
+peek                   O(1)           O(1)
+isEmpty                O(1)           O(1)
+Delete entire stack    O(1)           O(1)
+
+
+Queue:
+                       time          space
+create queue           O(1)           O(1)
+Enqueue                O(n)/O(1)      O(1)
+Dequeue                O(n)/O(1)      O(1)
+peek                   O(1)           O(1)
+isEmpty                O(1)           O(1)
+Delete entire Queue    O(1)           O(1)    
+
+
+

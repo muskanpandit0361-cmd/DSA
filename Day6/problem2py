@@ -1,0 +1,32 @@
+#to check valid parenthesis using stack
+#i/p--Enter parenthesis: ({[()]})
+#o/t--Valid
+
+stack = []
+s = input("Enter parenthesis: ")
+
+for char in s:
+    if char == '(' or char == '[' or char == '{':
+        stack.append(char)
+    elif char == ')':
+        if not stack or stack[-1] != '(':
+            print("Invalid")
+            exit()
+        stack.pop()
+    elif char == ']':
+        if not stack or stack[-1] != '[':
+            print("Invalid")
+            exit()
+        stack.pop()
+    elif char == '}':
+        if not stack or stack[-1] != '{':
+            print("Invalid")
+            exit()
+        stack.pop()
+
+if len(stack) == 0:
+    print("Valid")
+else:
+    print("Invalid")
+
+

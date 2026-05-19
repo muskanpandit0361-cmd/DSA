@@ -74,4 +74,11 @@ isEmpty                O(1)           O(1)
 Delete entire Queue    O(1)           O(1)    
 
 
+===============Day 6==================
+
+instance variable-> accessed using "self"
+                   eg.; self.a=10
+
+                   
+
 

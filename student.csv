@@ -1,0 +1,6 @@
+StudId,StudName,Phy,Chem,Maths,Total,Percentage,Result
+101,Muskan,80,90,85,255,85.0,Pass
+StudId,StudName,Phy,Chem,Maths,Total,Percentage,Result
+102,Anushka,90,90,90,270,90.0,Pass
+StudId,StudName,Phy,Chem,Maths,Total,Percentage,Result
+103,Rahul,20,60,55,135,45.0,Fail

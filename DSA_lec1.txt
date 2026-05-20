@@ -79,6 +79,83 @@ Delete entire Queue    O(1)           O(1)
 instance variable-> accessed using "self"
                    eg.; self.a=10
 
-                   
+Time complexity of linkedlist
+                                Time           Space
+Creation                        O(1)            O(1)
+Insertion                       O(n)            O(1)
+searching                       O(n)            O(1)
+Traversing                      O(n)            O(1)
+Deletion of a node              O(n)            O(1)
+Deletion of linkedlist          O(1)            O(1)
+
+===============Day 7==================
+
+When to use recursion?
+--> when the main problem can be divided into similar sab problems.
+-->in tree to perform pre, post,and inorder
+
+*recursion uses the stack memory
+*not memory efficient
+
+recursion vs iteration
+1. space efficiency --- iteration
+2. time efficiency --- iteration
+3. easy to code --- recursion
+
+-----------------------------------
+------------Trees------------------
+application-file/folder system
+ *quicker nd easier access of data
+ *Stores hierarchical data
+
+ terminologies:
+1. root
+2. edge
+3. leaf
+4. sibling
+5. ancester
+6. depth of tree
+7. height of tree
+
+1. using python list(array):
+left child- cell(2x)
+right child-cell(2x+1)
+
+2.using linkedlist: 
 
 
+===============Day 8==================
+-----------binary tree----------
+Full binary tree-
+1. each node has either 0 or 2 childeren
+2. no node has a single child
+
+Complete binary tree-
+1. all levels except possibly the last one are completely filled
+2. nodes in the last level are filled from left to right
+
+Perfect binary tree-
+1. all internal nodes have exactly two nodes
+2. all leaf nodes are at the same level
+
+Operations:
+-Creation of tree
+-Insertion of a node
+-Deletion of nodes
+-Search for a value
+-Traverse all nodes
+-Deletion of tree
+
+Traversal: 1.BFS---level order traversal
+           2.DFS --1) preorder  ---root-left-right
+                   2) inorder   ---left-root-right
+                   3) postorder ---left-right-root
+
+Why binary search tree?
+--- Its performs faster than binary tree when inserting and deleting nodes.
+
+#---------------------Error Logs-------------------
+level                    value                      details
+critical                   50                   not able to perform any function
+Error                      40
+warning                    30

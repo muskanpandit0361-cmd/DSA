@@ -159,3 +159,81 @@ level                    value                      details
 critical                   50                   not able to perform any function
 Error                      40
 warning                    30
+
+
+
+===============Day 9==================
+
+*Stack using linkedlist:
+     yield keyword---is used to return value when data size is huge
+                  ---it is the part of generator in python 
+                  ---used instead of return
+
+
+*Queue using linkedlist:
+   - fast performance
+   - implementation is not easy
+
+   Enqueue:
+     tail=node
+   Dequeue:
+     head = head.next  
+
+
+GRAPH:
+terminologies:
+  node
+  edges
+
+
+                                             Graph
+                                              /\
+                     Directed                                         Undirected
+                        /\                                                /\
+           Weighted             Unweighted                   Weighted             Unweighted  
+              /\                                                /\
+     Positive    negative                               Positive  negative
+
+
+
+1. Unweighted - Undirected
+2. Unweighted - Directed
+3. Weighted - Undirected
+4. Weighted - Directed
+5. Positive - Weighted - Undirected
+6. Positive - Weighted - Directed
+7. negative - Weighted - Undirected
+8. negative - Weighted - Directed     
+9. negative - unweighted - Undirected
+10.negative - unweighted - Directed 
+
+1) adjacency matrix-- square matrix 
+                   -- elements indicate whether pairs of vertices are adjacent or not in the Graph
+
+2) adjacency list-- collection of unordered list used to represent  Graph
+        A->B->C->D
+        B->A->E
+        C->A->D
+        D->A->C->E
+        E->B->D
+ 
+
+When graph is too dense(completely connected), use matrix, otherwise graph
+
+--------------------------------------------------------------
+
+Garbage collection in python:
+1. gc calls destructor to deallocate resources
+2. destructor informs gc about the same 
+3. gc deletes the memory
+
+Inheritance in python:
+1. single
+2. multilevel
+3. multiple
+
+
+Polymorphism:
+1. Compile time 
+        -python only supports operator overloading 
+2. Runtime

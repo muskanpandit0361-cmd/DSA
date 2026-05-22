@@ -237,3 +237,64 @@ Polymorphism:
 1. Compile time 
         -python only supports operator overloading 
 2. Runtime
+
+
+===============Day 10==================
+ Regular Expression
+
+ application-1. used to develop  a digital circuit
+             2. compiler and interpreter
+             3. develop a validation Logic
+             4. pattern matching and searching application like crtl+f
+             5. develop communication protocol like TCP/IP
+
+
+Compile() function-- returns iterating object which match the object for every match
+
+| Function         | Purpose                            |
+| ---------------- | ---------------------------------- |
+|  re.match()      | Matches at beginning of string     |
+|  re.search()     | Searches first occurrence anywhere |
+|  re.findall()    | Returns all matches in list        |
+|  re.finditer()   | Returns iterator of match objects  |
+|  re.fullmatch()  | Matches complete string            |
+|  re.split()      | Splits string using regex          |
+|  re.sub()        | Replaces matches                   |
+|  re.subn()       | Replace + returns count            |
+|  re.compile()    | Compiles regex pattern             |
+
+
+-----------------------Hashing--------------------
+
+-technique used to convert data into fixed-sized value called a hash value or hash code
+-helps us store and search data very fast
+   
+without hashing-->O(n)  -->linear and binary search
+with hashing-->O(1)
+
+real-world use case   :
+1. google search
+2. password storage
+3. ATM system
+4. caching
+5. Blockchain
+6. database indexing
+
+hash function--> converts input into fixed index
+
+suppose table size=10
+index = key % 10
+e.g. 25 % 10 = 5
+so 25 stored at index 5
+
+Collision-->all map to same index.
+
+CAT
+ASCII values:
+C-67
+A-65
+T-84
+
+total=216
+216 % 10 = 6
+CAT will be stored at index 6 

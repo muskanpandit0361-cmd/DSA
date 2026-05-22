@@ -1,0 +1,40 @@
+# cities connected by roads
+# people in social media
+# computers connected in network
+
+class Graph:
+    def __init__(self, vertices):
+        self.V = vertices
+
+        self.matrix = [[0 for _ in range(vertices)] 
+                        for _ in range(vertices)]
+        
+
+    def add_edge(self, u, v):
+        self.matrix[u][v] = 1
+        self.matrix[v][u] = 1
+
+
+    def remove_edge(self, u, v):
+        self.matrix[u][v] = 0
+        self.matrix[v][u] = 0
+
+
+    def display(self):
+        for row in self.matrix:
+            print(row)
+
+g = Graph(4)   
+
+g.add_edge(0,1)
+g.add_edge(0,2)
+g.add_edge(1,3)
+g.add_edge(2,3)
+
+print("The adjacency matrix: ")             
+g.display()
+print() 
+
+g.remove_edge(1,3)
+print("Matrix after removing edge:")
+g.display()
